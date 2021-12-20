@@ -12,12 +12,26 @@ function boxCreator(container, numbersBox) {
         nbox.innerHTML = i;
         container.append(nbox);
         nbox.addEventListener('click',function() {
-            this.classList.toggle('blue');
+            mineVerify(mine, i, newBox)
         })
     }
 }
 
+function mineVerify(myArray, z, box) {
+    if(myArray.includes(z)) {
+        box.classList.toggle('red');
+        alert('hai perso!')
+        outputHtml.innerHTML= '';
+        } else {
+        box.classList.toggle('green');
+        }
+}
+
+
+
+
 let nbox = 1;
+let mine = [];
 
 // ad ogni click corrisponderà il caricamento del livello
 easyButton.addEventListener('click', function() {
