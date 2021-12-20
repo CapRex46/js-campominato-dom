@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.buttons {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 8px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+
+.box {
+    height: 50px;
+    width: 50px;
+    border: 2px black solid;
+    text-align: center;
+    line-height: 50px;
+}
+
+#output {
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.easylevel {
+    width: 400px;
+}
+.mediumlevel {
+    width: 500px;
+}
+.hardlevel {
+    width: 550px;
+}
+.blue {
+    background-color: yellowgreen;
+}
