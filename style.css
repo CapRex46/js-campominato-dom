@@ -1,49 +1,101 @@
-*{
-    margin: 0;
+* {
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
+}
+
+body{
+    background: #262D31;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.container {
-    margin: 0 auto;
+.buttons{
+    margin: 50px;
 }
 
-.buttons {
-    background-color: #4CAF50; /* Green */
+.btnstyle{
+    background-color: #495349; /* Green */
     border: none;
+    border-radius: 14px;
     color: white;
-    padding: 8px 22px;
+    padding: 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-  }
-
-
-.box {
-    height: 50px;
-    width: 50px;
-    border: 2px black solid;
-    text-align: center;
-    line-height: 50px;
+    margin: 4px 2px;
+    cursor: pointer;
+    box-shadow: 0 0 21px rgba(0, 0, 0, 0.637);
+    transition: .5s;
 }
 
-#output {
-    margin: 0 auto;
-    padding: 20px;
+.btnstyle:hover{
+    width: 200px ;
+    box-shadow: 0 0 21px rgba(250, 3, 3, 0.637);
+    transition: .5s;
+    font-weight: bolder;
+}
+
+#campominato-container {
     display: flex;
     flex-wrap: wrap;
+    margin: auto;
+    box-shadow: 0 0 21px rgba(250, 3, 3, 0.637);
 }
-.easylevel {
-    width: 400px;
-}
-.mediumlevel {
+
+
+
+#campominato-container.livello-1 {
     width: 500px;
 }
-.hardlevel {
-    width: 550px;
+
+#campominato-container.livello-2 {
+    width: 450px;
 }
-.blue {
-    background-color: yellowgreen;
+
+#campominato-container.livello-3 {
+    width: 350px;
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+    border: 1px #333 solid;
+    cursor: pointer;
+    background-color: lightgrey;
+    transition: .5s;
+}
+
+
+.cell:hover{
+    box-shadow: 0 0 21px rgba(22, 22, 22, 1.637);
+    transition: .5s;
+}
+
+.cell.red {
+    background-color: rgb(143, 26, 26);
+}
+
+.cell.blue {
+    background-color: rgb(173, 173, 207);
+}
+
+.game-over {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    line-height: 100vh;
+    text-align: center;
+    color: #fff;
+}
+
+.game-over.loser {
+    background-color: rgba(255, 0, 0, .5);
+}
+
+
+.game-over.winner {
+    background-color: rgba(0, 200, 0, .5);
 }
